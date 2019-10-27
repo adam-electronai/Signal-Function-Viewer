@@ -1,6 +1,8 @@
 function [t, r] = continuousramp(varargin)
-%CONTINUOUSRAMP Summary of this function goes here
-%   Detailed explanation goes here
+%CONTINUOUSRAMP Creates a ramp function with various parameters.
+%   Creates a continuous time ramp function r of variable t. Both t
+%   and r have product and summation variables for operations on
+%   the ramp function output.
 
 % Function default arguments.
 if sum(strcmp('tProd', varargin))
@@ -28,8 +30,8 @@ else
 end
 
 % Continuous time ramp function creation.
-t1 = linspace(-20, 0, 100);
-t2 = linspace(0, 20, 200);
+t1 = linspace(-20, 0, 800);
+t2 = linspace(0, 20, 800);
 t = ([t1 t2].*(1/tProd)) - tAdd;
 
 r1 = zeros(size(t1));

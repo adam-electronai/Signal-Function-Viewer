@@ -1,7 +1,7 @@
 function [t, u] = continuousunitstep(varargin)
 %CONTINUOUSUNITSTEP Creates a unit step function with various parameters.
 %   Creates a continuous time unit step function U of variable t. Both t
-%   and u have product, division, and summation variables for operations on
+%   and u have product and summation variables for operations on
 %   the unit step function output.
 
 % Function default arguments.
@@ -30,8 +30,8 @@ else
 end
 
 % Continuous time unit step function creation.
-t1 = linspace(-20, 0, 100);
-t2 = linspace(0, 20, 200);
+t1 = linspace(-20, 0, 800);
+t2 = linspace(0, 20, 800);
 t = ([t1 t2].*(1/tProd))-tAdd;
 
 u1 = zeros(size(t1));
