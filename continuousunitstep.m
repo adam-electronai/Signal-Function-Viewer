@@ -29,10 +29,10 @@ else
     uAdd = 0;
 end
 
-% Continuous time unit step creation.
-t1 = ((linspace(-20, 0, 100).*tProd) - tAdd);
-t2 = ((linspace(0, 20, 200).*tProd) - tAdd);
-t = [t1 t2];
+% Continuous time unit step function creation.
+t1 = linspace(-20, 0, 100);
+t2 = linspace(0, 20, 200);
+t = ([t1 t2].*(1/tProd))-tAdd;
 
 u1 = zeros(size(t1));
 u2 = ones(size(t2));
