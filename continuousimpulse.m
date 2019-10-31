@@ -37,7 +37,7 @@ t = ([t1 t2].*(1/tProd)) - tAdd;
 d1 = zeros(size(t1));
 d1(end) = d1(end) + 1;
 d2 = zeros(size(t2));
-d2(end) = d2(1) + 1;
+d2(1) = d2(1) + 1;
 dtemp = [d1 d2];
 d = (dtemp.*dProd) + dAdd;
 end
