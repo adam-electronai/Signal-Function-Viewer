@@ -16,7 +16,7 @@ Note: Program binary and toolbox installation files will be created in the futur
 
 ## Author
 
-* **Adam Worrall** - [Adintra](https://github.com/adintra)
+* **Adam Worrall** 
 
 
 
